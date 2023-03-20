@@ -1,0 +1,85 @@
+.header{
+    height:29vh;
+    width:100%;
+    background-image:url("cloudbg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-bottom-style:solid;
+    border-color:rgb(142, 149, 177);
+  }
+  .container {
+    height: 68vh; 
+    padding: 2%;
+    width: 96%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   background-color: #46B2E0 ;
+  }
+  #bvlogo
+  {
+    border-radius:49%;
+    padding-top: 10%;
+  }
+
+.tableWrap {
+    height:100vh;
+    display:flex;
+    
+    
+}
+
+
+.td1{
+    border: 1px solid  black;
+    text-align: center;
+    padding: 2px 40px;
+    font-size: larger;
+    color:blue;
+  
+
+}
+table th {
+    color:black;
+}
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+input{
+    padding: 5px;
+    margin-right:5px;
+}
+.addForm button{
+    width:100px;
+    padding:5px;
+    color:white;
+    background-color:orange;
+}
+.addForm button:hover {
+    cursor: pointer;
+    background-color:orangered
+}
+ .edit {
+    color:white;
+    margin-right:5px;
+    background-color:blue;
+    
+ }
+ .edit, .delete{
+    border:none;
+    padding:7px;
+    border-radius:5px;
+    cursor:pointer;
+ }
+ .edit:hover {
+    background-color:red;
+ }
+ .delete {
+    color:white;
+    
+    background-color:rgb(60, 203, 21);
+ }
+ .delete:hover {
+    background-color:rgb(170, 9, 9);
+ }
