@@ -12,14 +12,13 @@ function Table() {
             <div>
                 <AddItem setData={setData} />
                 <form onSubmit={handleUpdate}>
-                     <table className="td1" border="2">
-                <thead>
+                <table className="td1" border="2">
                 <th>PRODUCT ID </th>  
                 <th>PNAME </th>
                 <th>PRICE </th>
                 <th>QTY </th>
                 <th>ACTION </th>
-                </thead>
+
                 {datas.map((current) => (
                     editState === current.id ? <EditItem  current={current} datas={datas} setData={setData}/> :
                     <tr key={current.id}>
@@ -28,8 +27,8 @@ function Table() {
                         <td>{current.price}</td>
                         <td>{current.qty}</td>
                         <td>
-                            <button type="button" className="edit" onClick={() => handleEdit(current.id)}> Edit</button>
-                            <button type="button" className="delete" onClick={() => handleDelete(current.id)} >Delete</button>
+                            <button className="edit" onClick={() => handleEdit(current.id)}> Edit</button>
+                            <button className="delete" onClick={() => handleDelete(current.id)} >Delete</button>
                         </td>
                     </tr>
                 ))}
@@ -97,6 +96,7 @@ function EditItem({current, datas,setData}) {
             <td><input type="number" onChange={handleQty} value={current.qty} name="qty" placeholder="Enter qty" /></td>
             <td><button type="submit" >Update</button></td>
        </tr> 
+
     )
 }
 function AddItem({setData}){
@@ -153,5 +153,3 @@ function AddItem({setData}){
 
 
 export default Table;
-
-  
