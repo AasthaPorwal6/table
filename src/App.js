@@ -9,5 +9,9 @@ function App()
   <>
     </>
 }
+<<<<<<< HEAD
 export default App;
 
+=======
+export default App;
+>>>>>>> a7c89bab5535aa3c03d3e02cb24edc9b501be7dd
